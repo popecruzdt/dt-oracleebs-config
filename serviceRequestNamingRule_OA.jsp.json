@@ -1,0 +1,25 @@
+{
+  "enabled": true,
+  "namingPattern": "{RequestAttribute:Oracle EBS - OAFunc} (/OA.jsp)",
+  "conditions": [
+    {
+      "attribute": "WEBREQUEST_URL_PATH",
+      "comparisonInfo": {
+        "type": "STRING",
+        "comparison": "ENDS_WITH",
+        "value": "/OA.jsp",
+        "negate": false,
+        "caseSensitive": false
+      }
+    },{
+      "attribute": "SERVICE_REQUEST_ATTRIBUTE",
+      "comparisonInfo": {
+        "type": "STRING_REQUEST_ATTRIBUTE",
+        "requestAttribute": "Oracle EBS - OAFunc",
+        "comparison": "EXISTS",
+        "negate": false,
+        "caseSensitive": false
+    }
+   }
+  ]
+}
