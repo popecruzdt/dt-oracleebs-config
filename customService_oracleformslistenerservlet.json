@@ -1,0 +1,39 @@
+{
+  "name": "Oracle EBS - Oracle Forms Listener Servlet",
+  "enabled": true,
+  "rules": [
+    {
+      "id": "ad53baed-6249-43a1-9117-8bf25c80a372",
+      "enabled": true,
+      "fileName": "",
+      "className": "oracle.forms.servlet.ListenerServlet",
+      "matcher": "EQUALS",
+      "methodRules": [
+        {
+          "id": "b3f26d75-baad-49a4-a133-f7e73e5e6559",
+          "methodName": "sendDataFromRunform",
+          "returnType": "void"
+        }
+      ],
+      "annotations": []
+    },
+    {
+      "id": "e06c7b3d-c4d5-4748-b143-818c9f0d7d9a",
+      "enabled": true,
+      "fileName": "",
+      "className": "oracle.forms.servlet.RunformSession",
+      "matcher": "EQUALS",
+      "methodRules": [
+        {
+          "id": "90488e5a-f736-42cf-9c87-23665cdbe80c",
+          "methodName": "dataToRunform",
+          "returnType": "void"
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "queueEntryPoint": false,
+  "queueEntryPointType": null,
+  "processGroups": []
+}
