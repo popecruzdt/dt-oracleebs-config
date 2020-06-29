@@ -1,0 +1,20 @@
+{
+  "name": "Oracle EBS - username",
+  "enabled": true,
+  "dataType": "STRING",
+  "dataSources": [
+    {
+      "enabled": true,
+      "source": "POST_PARAMETER",
+      "valueProcessing": {
+        "splitAt": "",
+        "trim": false
+      },
+      "parameterName": "username"
+    }
+  ],
+  "normalization": "ORIGINAL",
+  "aggregation": "FIRST",
+  "confidential": false,
+  "skipPersonalDataMasking": true
+}
